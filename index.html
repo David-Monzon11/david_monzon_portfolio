@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio – Front-End Developer & UI/UX Designer</title>
+    <meta
+      name="description"
+      content="Personal portfolio of a Front-End Developer & UI/UX Designer specializing in clean interfaces, intuitive UX, and performant web experiences."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="#hero" class="logo" aria-label="Home">
+          <span class="logo-mark">FD</span>
+          <span class="logo-text">Front-End &amp; UI/UX</span>
+        </a>
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#process">Process</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section id="hero" class="section hero-section">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Available for new opportunities</p>
+            <h1>
+              <span class="accent-text">Niceo</span> – Front‑End Developer
+              <span class="ampersand">&amp;</span> UI/UX Designer
+            </h1>
+            <p class="hero-tagline">
+              I craft clean, intuitive interfaces and thoughtful user
+              experiences that balance aesthetics, performance, and business
+              goals.
+            </p>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">View Projects</a>
+              <a href="#contact" class="btn ghost">Let’s work together</a>
+            </div>
+            <div class="hero-meta">
+              <div>
+                <span class="meta-label">Focus</span>
+                <span class="meta-value">Design systems, UI engineering</span>
+              </div>
+              <div>
+                <span class="meta-label">Location</span>
+                <span class="meta-value">Remote / Open to relocation</span>
+              </div>
+            </div>
+          </div>
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card">
+              <p class="hero-card-title">Selected strengths</p>
+              <ul>
+                <li>Pixel-perfect UI implementation</li>
+                <li>Design systems &amp; component libraries</li>
+                <li>Data-informed UX decisions</li>
+                <li>Responsive &amp; accessible interfaces</li>
+              </ul>
+            </div>
+            <div class="hero-float">
+              <span>Front-End</span>
+              <span>UI/UX</span>
+              <span>Design Systems</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>Designing with intention, building with precision.</h2>
+          </div>
+          <div class="copy-large">
+            <p>
+              I’m a Front-End Developer and UI/UX Designer who loves turning
+              complex problems into simple, elegant experiences. My work sits at
+              the intersection of design and engineering, ensuring every pixel
+              is purposeful and every interaction feels natural.
+            </p>
+            <p>
+              From early discovery to high-fidelity implementation, I partner
+              closely with teams to ship interfaces that are not only beautiful,
+              but also accessible, scalable, and aligned with product strategy.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Skills &amp; Stack</p>
+            <h2>Bridging product, design, and front-end engineering.</h2>
+          </div>
+          <div class="skills-grid">
+            <article class="card">
+              <h3>Front-End Development</h3>
+              <p>
+                Building fast, responsive interfaces with clean, modern code and
+                reusable components.
+              </p>
+              <ul class="pill-list">
+                <li>HTML5 / Semantic markup</li>
+                <li>CSS3 / SCSS</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React / Vue (placeholder)</li>
+                <li>Responsive layouts</li>
+                <li>Performance optimization</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>UI &amp; Visual Design</h3>
+              <p>
+                Crafting clear hierarchies, layouts, and component systems that
+                scale across products.
+              </p>
+              <ul class="pill-list">
+                <li>Design systems</li>
+                <li>Component libraries</li>
+                <li>Interaction design</li>
+                <li>Micro-interactions</li>
+                <li>Design tokens</li>
+                <li>Design handoff</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>UX &amp; Product Thinking</h3>
+              <p>
+                Grounded in user needs and business goals, with a bias toward
+                clarity and usability.
+              </p>
+              <ul class="pill-list">
+                <li>User flows</li>
+                <li>Information architecture</li>
+                <li>Wireframing &amp; prototyping</li>
+                <li>Usability testing</li>
+                <li>Accessible design (WCAG)</li>
+                <li>Data-informed decisions</li>
+              </ul>
+            </article>
+
+            <article class="card">
+              <h3>Tools</h3>
+              <p>
+                Comfortable across modern design and development tools that
+                streamline collaboration.
+              </p>
+              <ul class="pill-list">
+                <li>Figma</li>
+                <li>Adobe XD / Illustrator</li>
+                <li>Notion / Jira</li>
+                <li>Git / GitHub</li>
+                <li>Storybook (placeholder)</li>
+                <li>Chrome DevTools</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Selected Work</p>
+            <h2>Projects &amp; case studies.</h2>
+            <p class="section-subtitle">
+              A mix of product design and front-end builds. Replace the
+              placeholders with your real projects, links, and visuals.
+            </p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-media project-placeholder project-gradient-1">
+                <span>Product Dashboard UI</span>
+              </div>
+              <div class="project-body">
+                <h3>Analytics Dashboard for SaaS</h3>
+                <p>
+                  A responsive web dashboard for a B2B SaaS product, focused on
+                  simplifying complex analytics into clear, actionable insights.
+                  Designed the system and implemented the front-end.
+                </p>
+                <dl class="project-meta">
+                  <div>
+                    <dt>Role</dt>
+                    <dd>End-to-end UI/UX, Front-End Development</dd>
+                  </div>
+                  <div>
+                    <dt>Tools</dt>
+                    <dd>Figma, React, TypeScript, CSS Modules</dd>
+                  </div>
+                </dl>
+                <div class="project-links">
+                  <a href="#" class="project-link">View case study</a>
+                  <a href="#" class="project-link subtle">Live demo</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media project-placeholder project-gradient-2">
+                <span>Mobile-first Experience</span>
+              </div>
+              <div class="project-body">
+                <h3>E-commerce Landing Experience</h3>
+                <p>
+                  A mobile-first shopping experience optimized for quick
+                  discovery and clean browsing. Focused on navigation clarity,
+                  hierarchy, and conversion-driven layouts.
+                </p>
+                <dl class="project-meta">
+                  <div>
+                    <dt>Role</dt>
+                    <dd>UX, UI design, front-end build</dd>
+                  </div>
+                  <div>
+                    <dt>Tools</dt>
+                    <dd>Figma, Vue, SCSS, GSAP (animations)</dd>
+                  </div>
+                </dl>
+                <div class="project-links">
+                  <a href="#" class="project-link">View case study</a>
+                  <a href="#" class="project-link subtle">Prototype</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-media project-placeholder project-gradient-3">
+                <span>Design System</span>
+              </div>
+              <div class="project-body">
+                <h3>Design System &amp; Component Library</h3>
+                <p>
+                  A modular design system for a growing product team, including
+                  tokens, components, and documentation. Paired closely with
+                  engineering to ensure seamless handoff.
+                </p>
+                <dl class="project-meta">
+                  <div>
+                    <dt>Role</dt>
+                    <dd>System design, documentation, front-end support</dd>
+                  </div>
+                  <div>
+                    <dt>Tools</dt>
+                    <dd>Figma, Storybook, React, Styled Components</dd>
+                  </div>
+                </dl>
+                <div class="project-links">
+                  <a href="#" class="project-link">View system</a>
+                  <a href="#" class="project-link subtle">Documentation</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Process -->
+      <section id="process" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Design Process</p>
+            <h2>A user-centered, iterative approach.</h2>
+          </div>
+          <ol class="process-steps" aria-label="Design and development process">
+            <li class="card process-step">
+              <span class="step-number">01</span>
+              <h3>Research</h3>
+              <p>
+                Understand the problem, users, and context through stakeholder
+                interviews, audits, and user research.
+              </p>
+              <p class="step-detail">
+                Define goals, constraints, and success metrics to keep everyone
+                aligned.
+              </p>
+            </li>
+            <li class="card process-step">
+              <span class="step-number">02</span>
+              <h3>Wireframe</h3>
+              <p>
+                Explore flows and information architecture with low-fidelity
+                sketches and wireframes.
+              </p>
+              <p class="step-detail">
+                Validate concepts early with teams and users before investing in
+                visuals.
+              </p>
+            </li>
+            <li class="card process-step">
+              <span class="step-number">03</span>
+              <h3>Design</h3>
+              <p>
+                Translate ideas into polished, accessible interfaces with a
+                strong visual hierarchy.
+              </p>
+              <p class="step-detail">
+                Build reusable components and patterns that scale.
+              </p>
+            </li>
+            <li class="card process-step">
+              <span class="step-number">04</span>
+              <h3>Develop</h3>
+              <p>
+                Implement designs in code with attention to performance,
+                semantics, and responsiveness.
+              </p>
+              <p class="step-detail">
+                Collaborate closely with engineering for smooth handoff and
+                iteration.
+              </p>
+            </li>
+            <li class="card process-step">
+              <span class="step-number">05</span>
+              <h3>Test &amp; Iterate</h3>
+              <p>
+                Validate with real users, track behavior, and refine the
+                experience over time.
+              </p>
+              <p class="step-detail">
+                A/B tests, usability sessions, and analytics guide meaningful
+                improvements.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact-section">
+        <div class="container split">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build something thoughtful together.</h2>
+            <p class="copy-large">
+              Whether you’re looking for a front-end partner, a UX collaborator,
+              or a designer who can ship production-ready code, I’d love to
+              hear from you.
+            </p>
+            <ul class="contact-links" aria-label="Social links">
+              <li>
+                <a href="#" aria-label="GitHub profile">GitHub</a>
+              </li>
+              <li>
+                <a href="#" aria-label="LinkedIn profile">LinkedIn</a>
+              </li>
+              <li>
+                <a href="#" aria-label="Design portfolio">Design portfolio</a>
+              </li>
+            </ul>
+          </div>
+          <form class="card contact-form" aria-label="Send a message">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" type="text" name="name" placeholder="Your name" />
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="form-row">
+              <label for="message">Project details</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="4"
+                placeholder="Tell me a bit about what you’re building."
+              ></textarea>
+            </div>
+            <button type="submit" class="btn primary full-width">
+              Send message
+            </button>
+            <p class="form-footnote">
+              Prefer email? Reach out at
+              <a href="mailto:you@example.com">you@example.com</a>
+            </p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>&copy; <span id="year"></span> Niceo – Front-End Developer &amp; UI/UX Designer.</p>
+        <p class="footer-secondary">
+          Built with a focus on accessibility, performance, and clear UI.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
