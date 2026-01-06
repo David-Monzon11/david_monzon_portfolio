@@ -615,7 +615,8 @@ p {
 }
 
 .project-gradient-1 {
-  background: radial-gradient(circle at 0 0, #6a9dff, #233b73);
+  background: url(Screenshot\ 2025-12-19\ 134046.png) no-repeat center center;
+  background-size: cover;
 }
 
 .project-gradient-2 {
