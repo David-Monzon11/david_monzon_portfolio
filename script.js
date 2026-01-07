@@ -38,6 +38,49 @@ if (scrollTopBtn) {
   });
 }
 
+// Dark mode toggle
+const themeToggle = document.querySelector(".theme-toggle");
+const body = document.body;
+
+// Check for saved theme preference or default to light mode
+const currentTheme = localStorage.getItem("theme") || "light";
+if (currentTheme === "dark") {
+  body.classList.add("dark-theme");
+  body.classList.remove("light-theme");
+  updateThemeIcon(true);
+} else {
+  body.classList.add("light-theme");
+  body.classList.remove("dark-theme");
+  updateThemeIcon(false);
+}
+
+function updateThemeIcon(isDark) {
+  if (themeToggle) {
+    const icon = themeToggle.querySelector("i");
+    if (icon) {
+      icon.className = isDark ? "fas fa-sun" : "fas fa-moon";
+    }
+  }
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const isDark = body.classList.contains("dark-theme");
+    
+    if (isDark) {
+      body.classList.remove("dark-theme");
+      body.classList.add("light-theme");
+      localStorage.setItem("theme", "light");
+      updateThemeIcon(false);
+    } else {
+      body.classList.remove("light-theme");
+      body.classList.add("dark-theme");
+      localStorage.setItem("theme", "dark");
+      updateThemeIcon(true);
+    }
+  });
+}
+
 // Set current year in footer
 const yearEl = document.getElementById("year");
 if (yearEl) {
@@ -61,7 +104,7 @@ const observer = new IntersectionObserver(
 
 document
   .querySelectorAll(
-    ".section, .project-card, .card, .contact-form, .hero-left, .hero-right, .hero-center"
+    ".section, .project-card, .card, .contact-form, .hero-left, .hero-right, .hero-center, .education-card, .cert-card"
   )
   .forEach((el) => {
     el.classList.add("reveal");

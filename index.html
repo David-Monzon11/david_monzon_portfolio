@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="light-theme">
     <header class="site-header">
       <div class="container nav-container">
         <a href="#hero" class="logo" aria-label="Home">
@@ -27,20 +27,26 @@
           <ul>
             <li><a href="#about">about</a></li>
             <li><a href="#skills">skills</a></li>
-            <li><a href="#projects">portfolio</a></li>
+            <li><a href="#projects">projects</a></li>
+            <li><a href="#education">education</a></li>
             <li><a href="#contact">contact</a></li>
           </ul>
         </nav>
-        <div class="header-social">
-          <a href="https://github.com/David-Monzon11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-            <i class="fab fa-github"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/david-monzon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-            <i class="fab fa-linkedin"></i>
-          </a>
-          <a href="mailto:davidmonzon156@gmail.com" aria-label="Email">
-            <i class="fas fa-envelope"></i>
-          </a>
+        <div class="header-right">
+          <div class="header-social">
+            <a href="https://github.com/David-Monzon11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/david-monzon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:davidmonzon156@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+          <button class="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
         </div>
         <button
           class="nav-toggle"
@@ -66,7 +72,7 @@
           </div>
           <div class="hero-center">
             <div class="split-face-container">
-              <img src="pfp.jpg" alt="David D. Monzon" class="profile-image-split" />
+              <img src="pfp.png" alt="David D. Monzon" class="profile-image-split" />
               <div class="split-face-overlay"></div>
             </div>
           </div>
@@ -263,8 +269,78 @@
         </div>
       </section>
 
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Education & Credentials</p>
+            <h2>Academic journey and continuous learning.</h2>
+          </div>
+          <div class="education-grid">
+            <article class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="education-content">
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p class="education-institution">Pampanga State University, Candaba Campus</p>
+                <p class="education-period">2023 - Present</p>
+                <p class="education-description">Currently pursuing my degree with a focus on web development and user interface design.</p>
+              </div>
+            </article>
+            <article class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-university"></i>
+              </div>
+              <div class="education-content">
+                <h3>Bachelor of Science in Computer Science</h3>
+                <p class="education-institution">Holy Cross College</p>
+                <p class="education-period">2022 - 2023</p>
+                <p class="education-description">Completed first year, gaining foundational knowledge in computer science principles.</p>
+              </div>
+            </article>
+            <article class="education-card">
+              <div class="education-icon">
+                <i class="fas fa-school"></i>
+              </div>
+              <div class="education-content">
+                <h3>STEM Strand</h3>
+                <p class="education-institution">Holy Cross College</p>
+                <p class="education-period">2020 - 2022</p>
+                <p class="education-description">Completed senior high school with focus on Science, Technology, Engineering, and Mathematics.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications -->
+      <section id="certifications" class="section section-alt">
+        <div class="container">
+          <div class="section-header">
+            <p class="eyebrow">Certifications</p>
+            <h2>Validated skills and achievements.</h2>
+          </div>
+          <div class="certifications-grid">
+            <article class="cert-card">
+              <div class="cert-badge">
+                <i class="fab fa-python"></i>
+              </div>
+              <div class="cert-content">
+                <h3>Python Intermediate Course</h3>
+                <p class="cert-issuer">Sololearn</p>
+                <p class="cert-description">Completed comprehensive intermediate Python programming course covering advanced concepts and practical applications.</p>
+                <span class="cert-status">
+                  <i class="fas fa-check-circle"></i> Completed
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <!-- Process -->
-      <section id="process" class="section section-alt">
+      <section id="process" class="section">
         <div class="container">
           <div class="section-header">
             <p class="eyebrow">Design Process</p>
@@ -412,7 +488,8 @@
         <nav class="footer-nav">
           <a href="#about">about</a>
           <a href="#skills">skills</a>
-          <a href="#projects">portfolio</a>
+          <a href="#projects">projects</a>
+          <a href="#education">education</a>
           <a href="#contact">contact</a>
         </nav>
       </div>

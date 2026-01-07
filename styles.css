@@ -15,6 +15,18 @@
   --nav-height: 80px;
 }
 
+body.dark-theme {
+  --bg: #0a0a0a;
+  --bg-soft: #141414;
+  --text: #ffffff;
+  --text-soft: #b0b0b0;
+  --text-light: #707070;
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #ffffff;
+  --shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  --shadow-hover: 0 4px 16px rgba(0, 0, 0, 0.6);
+}
+
 *,
 *::before,
 *::after {
@@ -132,6 +144,12 @@ button:focus-visible {
   font-weight: 400;
 }
 
+.header-right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
 .header-social {
   display: flex;
   gap: 20px;
@@ -144,6 +162,27 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+  background: var(--text);
+  color: var(--bg);
+  transform: rotate(15deg);
 }
 
 .nav-toggle {
@@ -513,6 +552,146 @@ h2 {
   transform: translateX(4px);
 }
 
+/* Education Section */
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.education-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+}
+
+.education-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.education-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: var(--bg-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text);
+  margin-bottom: 20px;
+  border: 2px solid var(--border);
+}
+
+.education-content h3 {
+  font-size: 1.2rem;
+  margin: 0 0 8px;
+  font-weight: 600;
+}
+
+.education-institution {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  margin: 0 0 6px;
+  font-weight: 500;
+}
+
+.education-period {
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 0 0 12px;
+}
+
+.education-description {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Certifications Section */
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.cert-card {
+  background: var(--bg);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  gap: 24px;
+  border: 1px solid var(--border);
+  align-items: flex-start;
+}
+
+.cert-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-hover);
+}
+
+.cert-badge {
+  width: 70px;
+  height: 70px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: white;
+  flex-shrink: 0;
+}
+
+.cert-content {
+  flex: 1;
+}
+
+.cert-content h3 {
+  font-size: 1.2rem;
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.cert-issuer {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+
+.cert-description {
+  font-size: 0.9rem;
+  color: var(--text-soft);
+  line-height: 1.6;
+  margin: 0 0 16px;
+}
+
+.cert-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.85rem;
+  color: var(--text-soft);
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+}
+
+.cert-status i {
+  color: #10b981;
+}
+
 /* Process Section */
 .process-steps {
   list-style: none;
@@ -752,6 +931,10 @@ h2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .education-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .process-steps {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -808,6 +991,14 @@ h2 {
   }
 
   .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certifications-grid {
     grid-template-columns: 1fr;
   }
 
