@@ -10,11 +10,31 @@ if (navToggle && nav) {
 
   nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      if (window.innerWidth <= 720 && nav.classList.contains("open")) {
+      if (window.innerWidth <= 768 && nav.classList.contains("open")) {
         nav.classList.remove("open");
         navToggle.setAttribute("aria-expanded", "false");
       }
     });
+  });
+}
+
+// Scroll to top functionality
+const scrollTopBtn = document.querySelector(".scroll-top");
+if (scrollTopBtn) {
+  scrollTopBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
+  // Show/hide scroll to top button
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 300) {
+      scrollTopBtn.style.opacity = "1";
+      scrollTopBtn.style.pointerEvents = "auto";
+    } else {
+      scrollTopBtn.style.opacity = "0.5";
+      scrollTopBtn.style.pointerEvents = "none";
+    }
   });
 }
 
@@ -41,7 +61,7 @@ const observer = new IntersectionObserver(
 
 document
   .querySelectorAll(
-    ".section, .project-card, .card, .hero-card, .hero-float, .contact-form"
+    ".section, .project-card, .card, .contact-form, .hero-left, .hero-right, .hero-center"
   )
   .forEach((el) => {
     el.classList.add("reveal");

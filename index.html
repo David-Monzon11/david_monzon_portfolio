@@ -22,8 +22,26 @@
       <div class="container nav-container">
         <a href="#hero" class="logo" aria-label="Home">
           <span class="logo-mark">DM</span>
-          <span class="logo-text">DAVID MONZON</span>
         </a>
+        <nav class="main-nav" aria-label="Primary navigation">
+          <ul>
+            <li><a href="#about">about</a></li>
+            <li><a href="#skills">skills</a></li>
+            <li><a href="#projects">portfolio</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-social">
+          <a href="https://github.com/David-Monzon11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/david-monzon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="mailto:davidmonzon156@gmail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
         <button
           class="nav-toggle"
           aria-label="Toggle navigation"
@@ -31,79 +49,39 @@
         >
           <span></span>
           <span></span>
+          <span></span>
         </button>
-        <nav class="main-nav" aria-label="Primary navigation">
-          <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#process">Process</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
     <main>
       <!-- Hero -->
       <section id="hero" class="section hero-section">
-        <div class="container hero-grid">
-          <div class="hero-content">
-            <p class="eyebrow">Seeking OJT Opportunities</p>
-            <h1>
-              <span class="accent-text">DAVID DELA PEÑA MONZON</span> Front‑End Developer
-              <span class="ampersand">&amp;</span> UI/UX Designer
-            </h1>
-            <p class="hero-tagline">
-              Passionate and goal-oriented professional with a strong interest in front-end web development and UI/UX design. Eager to learn, contribute innovative solutions, and grow in a collaborative environment.
+        <div class="container hero-split">
+          <div class="hero-left">
+            <h1 class="hero-title-large">designer</h1>
+            <p class="hero-description">
+              Product designer specialising in UI design and design systems.
             </p>
-            <div class="hero-actions">
-              <a href="#projects" class="btn primary">View Projects</a>
-              <a href="#contact" class="btn ghost">Let's work together</a>
-            </div>
-            <div class="hero-meta">
-              <div>
-                <span class="meta-label">Location</span>
-                <span class="meta-value">Pampanga, Philippines</span>
-              </div>
-              <div>
-                <span class="meta-label">Status</span>
-                <span class="meta-value">Available for OJT</span>
-              </div>
-            </div>
-            <div class="hero-social">
-              <a href="https://github.com/David-Monzon11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/david-monzon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                <i class="fab fa-linkedin"></i>
-              </a>
-              <a href="mailto:davidmonzon156@gmail.com" aria-label="Email">
-                <i class="fas fa-envelope"></i>
-              </a>
-              <a href="tel:+639708129927" aria-label="Phone">
-                <i class="fas fa-phone"></i>
-              </a>
+          </div>
+          <div class="hero-center">
+            <div class="split-face-container">
+              <img src="pfp.jpg" alt="David D. Monzon" class="profile-image-split" />
+              <div class="split-face-overlay"></div>
             </div>
           </div>
-          <div class="hero-visual">
-            <div class="profile-image-container">
-              <img src="pfp.jpg" alt="David D. Monzon" class="profile-image" />
-              <div class="profile-badge">
-                <i class="fas fa-code"></i>
-                <span>Developer & Designer</span>
-              </div>
-            </div>
-            <div class="hero-card">
-              <p class="hero-card-title">Core Strengths</p>
-              <ul>
-                <li>Communication Skills</li>
-                <li>Creative and User-Focused</li>
-                <li>Attention to Detail</li>
-                <li>Professional and Organized</li>
-                <li>Teamwork and Collaboration</li>
-                <li>Adaptability and Flexibility</li>
-              </ul>
+          <div class="hero-right">
+            <h1 class="hero-title-large">&lt;coder&gt;</h1>
+            <p class="hero-description">
+              Front end developer who writes clean, elegant and efficient code.
+            </p>
+            <div class="code-snippets">
+              <div class="code-line">&lt;html&gt;</div>
+              <div class="code-line">height: 184px;</div>
+              <div class="code-line">class="jedi"&gt;</div>
+              <div class="code-line">S3 HTML5</div>
+              <div class="code-line">lor: #000;</div>
+              <div class="code-line">Query</div>
             </div>
           </div>
         </div>
@@ -202,12 +180,9 @@
       <!-- Projects -->
       <section id="projects" class="section">
         <div class="container">
+          <div class="section-divider"></div>
           <div class="section-header">
-            <p class="eyebrow">Selected Work</p>
-            <h2>Projects &amp; Experience</h2>
-            <p class="section-subtitle">
-              Real-world projects showcasing my skills in front-end development and UI/UX design.
-            </p>
+            <h2 class="section-title-large">SOME OF MY LATEST WORK</h2>
           </div>
 
           <div class="projects-grid">
@@ -430,10 +405,16 @@
 
     <footer class="site-footer">
       <div class="container footer-content">
-        <p>&copy; <span id="year"></span> David D. Monzon – Front-End Developer &amp; UI/UX Designer.</p>
-        <p class="footer-secondary">
-          Built with a focus on accessibility, performance, and clear UI.
-        </p>
+        <p>&copy; <span id="year"></span> David D. Monzon</p>
+        <a href="#hero" class="scroll-top" aria-label="Scroll to top">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+        <nav class="footer-nav">
+          <a href="#about">about</a>
+          <a href="#skills">skills</a>
+          <a href="#projects">portfolio</a>
+          <a href="#contact">contact</a>
+        </nav>
       </div>
     </footer>
 
