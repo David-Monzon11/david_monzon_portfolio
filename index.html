@@ -36,30 +36,19 @@
           </ul>
         </nav>
         <div class="header-right">
-          <div class="header-social">
-            <a href="https://github.com/David-Monzon11" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/david-monzon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i class="fab fa-linkedin"></i>
-            </a>
-            <a href="mailto:davidmonzon156@gmail.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
-          <button class="theme-toggle" aria-label="Toggle dark mode">
-            <i class="fas fa-moon"></i>
+          <button class="search-toggle" aria-label="Search">
+            <i class="fas fa-search"></i>
+          </button>
+          <button
+            class="nav-toggle"
+            aria-label="Toggle navigation"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
-        <button
-          class="nav-toggle"
-          aria-label="Toggle navigation"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
       </div>
     </header>
 
@@ -68,50 +57,70 @@
       <section id="hero" class="section hero-section">
         <div class="container hero-split">
           <div class="hero-left">
-            <h1 class="hero-title-large">David</h1>
-            <p class="hero-description">
-              Product designer specialising in UI design and design systems.
-            </p>
+            <h1 class="hero-title-large">David D. Monzon</h1>
+            <div class="hero-social">
+              <a href="https://github.com/David-Monzon11" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="hero-social-link">
+                <span>GH</span>
+              </a>
+              <a href="https://www.linkedin.com/in/david-monzon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="hero-social-link">
+                <span>LI</span>
+              </a>
+              <a href="mailto:davidmonzon156@gmail.com" aria-label="Email" class="hero-social-link">
+                <span>EM</span>
+              </a>
+            </div>
           </div>
           <div class="hero-center">
-            <div class="split-face-container">
-              <img src="pfp.png" alt="David D. Monzon" class="profile-image-split" />
+            <div class="profile-image-container">
+              <img src="pfp.png" alt="David D. Monzon" class="profile-image" />
             </div>
           </div>
           <div class="hero-right">
-            <h1 class="hero-title-large">&lt;Monzon&gt;</h1>
-            <p class="hero-description">
-              Front end developer who writes clean, elegant and efficient code.
+            <p class="hero-role">
+              <span class="role-text">Front End Developer</span>
+              <span class="role-underline"></span>
             </p>
-            <div class="code-snippets">
-              <div class="code-line">&lt;html&gt;</div>
-              <div class="code-line">height: 184px;</div>
-              <div class="code-line">class="jedi"&gt;</div>
-              <div class="code-line">S3 HTML5</div>
-              <div class="code-line">lor: #000;</div>
-              <div class="code-line">Query</div>
+            <h2 class="hero-subtitle">Based in Philippines, I'm developer and UI/UX designer.</h2>
+            <p class="hero-description-right">
+              I'm a passionate and goal-oriented Front-End Developer and UI/UX Designer currently pursuing my Bachelor of Science in Information Technology. I specialize in transforming design concepts into responsive, accessible web interfaces.
+            </p>
+            <div class="hero-contact-info">
+              <p class="contact-item">
+                <span class="contact-label">P:</span>
+                <span class="contact-value">+63 970-812-9927</span>
+              </p>
+              <p class="contact-item">
+                <span class="contact-label">E:</span>
+                <span class="contact-value">davidmonzon156@gmail.com</span>
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- About -->
-      <section id="about" class="section">
+      <!-- About & Contact Combined -->
+      <section id="about" class="section about-contact-section">
         <div class="container split">
-          <div>
+          <div class="about-section-left">
             <p class="eyebrow">About Me</p>
-            <h2>Passionate about creating meaningful digital experiences.</h2>
+            <blockquote class="about-quote">
+              "You can't use up creativity. The more you use, the more you have in your significant mind."
+            </blockquote>
+            <p class="copy-large">
+              I'm a passionate and goal-oriented Front-End Developer and UI/UX Designer currently pursuing my Bachelor of Science in Information Technology. My journey in technology has been driven by a strong interest in front-end web development and user-centered design. I specialize in transforming design concepts into responsive, accessible web interfaces.
+            </p>
+            <div class="experience-badge">
+              <span class="experience-number">2</span>
+              <span class="experience-text">Years Of Experience</span>
+            </div>
           </div>
-          <div class="copy-large">
-            <p>
-              I'm a passionate and goal-oriented Front-End Developer and UI/UX Designer currently pursuing my Bachelor of Science in Information Technology at Pampanga State University, Candaba Campus. My journey in technology has been driven by a strong interest in front-end web development and user-centered design.
-            </p>
-            <p>
-              I specialize in transforming design concepts into responsive, accessible web interfaces. With experience in creating wireframes, mockups, and implementing responsive UIs, I focus on improving user flows and visual consistency. I'm eager to contribute innovative solutions and continue learning in a professional environment.
-            </p>
-            <p>
-              <strong>Education:</strong> Currently pursuing BS in Information Technology at Pampanga State University, Candaba Campus (2023-Present)
-            </p>
+          <div class="contact-section-right">
+            <h2 class="contact-title">Any Type Of Query & Discussion.</h2>
+            <p class="contact-subtitle">Let's talk with me.</p>
+            <a href="mailto:davidmonzon156@gmail.com" class="contact-email-link">
+              <span>davidmonzon156@gmail.com</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
           </div>
         </div>
       </section>
@@ -412,73 +421,6 @@
         </div>
       </section>
 
-      <!-- Contact -->
-      <section id="contact" class="section contact-section">
-        <div class="container split">
-          <div>
-            <p class="eyebrow">Contact</p>
-            <h2>Let’s build something thoughtful together.</h2>
-            <p class="copy-large">
-              Whether you’re looking for a front-end partner, a UX collaborator,
-              or a designer who can ship production-ready code, I’d love to
-              hear from you.
-            </p>
-            <ul class="contact-links" aria-label="Social links">
-              <li>
-                <a href="https://github.com/David-Monzon11" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                  <i class="fab fa-github"></i> GitHub
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/david-monzon" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                  <i class="fab fa-linkedin"></i> LinkedIn
-                </a>
-              </li>
-              <li>
-                <a href="mailto:davidmonzon156@gmail.com" aria-label="Email">
-                  <i class="fas fa-envelope"></i> Email
-                </a>
-              </li>
-              <li>
-                <a href="tel:+639708129927" aria-label="Phone">
-                  <i class="fas fa-phone"></i> +63 970-812-9927
-                </a>
-              </li>
-            </ul>
-          </div>
-          <form class="card contact-form" aria-label="Send a message">
-            <div class="form-row">
-              <label for="name">Name</label>
-              <input id="name" type="text" name="name" placeholder="Your name" />
-            </div>
-            <div class="form-row">
-              <label for="email">Email</label>
-              <input
-                id="email"
-                type="email"
-                name="email"
-                placeholder="you@example.com"
-              />
-            </div>
-            <div class="form-row">
-              <label for="message">Project details</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                placeholder="Tell me a bit about what you’re building."
-              ></textarea>
-            </div>
-            <button type="submit" class="btn primary full-width">
-              Send message
-            </button>
-            <p class="form-footnote">
-              Prefer email? Reach out at
-              <a href="mailto:davidmonzon156@gmail.com">davidmonzon156@gmail.com</a>
-            </p>
-          </form>
-        </div>
-      </section>
     </main>
 
     <footer class="site-footer">
